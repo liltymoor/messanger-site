@@ -4,8 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=dewvice-width, initial-scale=1.0">
-    <title>Autoriastion</title>
-    <link rel="stylesheet" href="styles/autorisation.css">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../styles/registration.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
 
@@ -19,15 +19,30 @@
         </button>
         </a>
       </div>
-      <div class="autorisation">
-        <p class="heading">Autorisation</p>
+      <div class="registration">
+        <p class="heading">Registration</p>
         <p>
           Welcome back, <strong>User</strong>!<br>You are on Autorisation page at the moment.
         </p>
         <p>
-          Please enter your username and passsword to enjoy our messanger. 
+          Please enter your login and passsword to enjoy our messanger. 
         </p>
         <div class="user_input">
+          <div class="full_name">
+              <p class="user_data"><strong>Enter your personal data</strong></p>
+            <div class="name">
+              <input type="text" autocomplete="off" name="name" required />
+              <label for="name" class="label">
+                <span class="content">Name</span>
+              </label>
+            </div>
+            <div class="surname">
+              <input type="text" autocomplete="off" name="surname" required />
+              <label for="surname" class="label">
+                <span class="content">Surname</span>
+              </label>
+            </div>
+          </div>
           <div class="username">
             <input type="text" autocomplete="off" name="username" required />
             <label for="username" class="label">
