@@ -7,6 +7,7 @@
     <title>Registration</title>
     <link rel="stylesheet" href="../styles/registration.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="../scripts/registration.js"></script>
   </head>
 
   <body>
@@ -22,10 +23,10 @@
       <div class="registration">
         <p class="heading">Registration</p>
         <p>
-          Welcome back, <strong>User</strong>!<br>You are on Autorisation page at the moment.
+          Welcome to registranion page!
         </p>
         <p>
-          Please enter your login and passsword to enjoy our messanger. 
+          Please enter your personal data and after the username and password.
         </p>
         <div class="user_input">
           <div class="full_name">
@@ -43,17 +44,20 @@
               </label>
             </div>
           </div>
-          <div class="username">
-            <input type="text" autocomplete="off" name="username" required />
-            <label for="username" class="label">
-              <span class="content">Username</span>
-            </label>
-          </div>
-          <div class="password">
-            <input type="password" autocomplete="off" name="password" required />
-            <label for="password" class="label">
-              <span class="content">Password</span>
-            </label>
+          <div class="username_password">
+            <p class="user_data"><strong>Enter your username and password</strong></p>
+            <div class="username">
+              <input type="text" autocomplete="off" name="username" required />
+              <label for="username" class="label">
+                <span class="content">Username</span>
+              </label>
+            </div>
+            <div class="password">
+              <input type="password" autocomplete="off" name="password" required />
+              <label for="password" class="label">
+                <span class="content">Password</span>
+              </label>
+            </div>
           </div>
         </div>
       </div>
