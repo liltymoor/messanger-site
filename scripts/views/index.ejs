@@ -1,0 +1,39 @@
+<%- include('includes/header') %>
+
+    <div id="header"></div>
+    <div id="main">
+      <div class="next_btn">
+       <a href="html/main.html">
+        <button class="next">
+          <strong>Next</strong>
+        </button>
+        </a>
+      </div>
+      <div class="autorisation">
+        <p class="heading">Autorisation</p>
+        <div id="text_example">
+        </div>
+        <p>
+          Welcome back, <strong><%= title %></strong>!<br>You are on Autorisation page at the moment.
+        </p>
+        <p>
+          Please enter your username and passsword to enjoy our messanger. 
+        </p>
+        <div class="user_input">
+          <div class="username">
+            <input type="text" autocomplete="off" name="username" required />
+            <label for="username" class="label">
+              <span class="content">Username</span>
+            </label>
+          </div>
+          <div class="password">
+            <input type="password" autocomplete="off" name="password" required />
+            <label for="password" class="label">
+              <span class="content">Password</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<%- include('includes/footer') %>
