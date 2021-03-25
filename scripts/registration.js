@@ -1,5 +1,3 @@
-//alert("123");
-
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
@@ -10,7 +8,6 @@ const connection = mysql.createConnection({
 });
 
 connection.connect(err => {
-  alert(err)
   if (err) {
     console.log(err);
     return err;
@@ -22,7 +19,7 @@ connection.connect(err => {
 let query = "SELECT `name` FROM `user_data` WHERE id = 1";
 
 connection.query(query, (err, result) => {
-  alert(result);
+  var res = result;
 });
 
 
