@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password recovery</title>
+    <link rel="stylesheet" href="../styles/forgot.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+      function visibility() {
+        var visibility = document.getElementById('visibility');
+        var password = document.getElementById('password');
+        if (password.type === "password") {
+          password.type = "text";
+          visibility.style.color = "#9ec295";
+        } else {
+          password.type = "password";
+          visibility.style.color = "#bfbfbf";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <div id="main">
+      <div class="next_btn">
+       <a href="../index.html">
+        <button class="next">
+          <strong>Next</strong>
+        </button>
+        </a>
+      </div>
+      <div class="autorisation">
+        <p class="heading">Password recovery</p>
+        <div id="text_example">
+        </div>
+        <p>
+          Welcome to recovery page!
+        </p>
+        <p>
+          Please enter your new password and username to reset your password. 
+        </p>
+        <div class="user_input">
+          <div class="username">
+            <input type="text" autocomplete="off" name="username" required />
+            <label for="username" class="label">
+              <span class="content">Username</span>
+            </label>
+          </div>
+          <div class="password">
+            <input id="password" type="password" autocomplete="off" name="password" required />
+            <label for="password" class="label">
+              <span class="content">Password</span>
+            </label>
+            <button id="visibility" onclick="visibility()">
+              <span class="material-icons">
+                visibility
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+<!--  <script src="scripts/some_text.js"></script>-->
+
+</html>

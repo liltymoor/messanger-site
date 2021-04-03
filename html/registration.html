@@ -7,14 +7,27 @@
     <title>Registration</title>
     <link rel="stylesheet" href="../styles/registration.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="../scripts/registration.js"></script>
+    <script>
+      function visibility() {
+        var visibility = document.getElementById('visibility');
+        var password = document.getElementById('password');
+        if (password.type === "password") {
+          password.type = "text";
+          visibility.style.color = "#9ec295";
+        } else {
+          password.type = "password";
+          visibility.style.color = "#bfbfbf";
+        }
+      }
+    </script>
+<!--    <script src="../scripts/registration.js"></script>-->
   </head>
 
   <body>
     <div id="header"></div>
     <div id="main">
       <div class="next_btn">
-       <a href="html/main.html">
+       <a href="../index.html">
         <button class="next">
           <strong>Next</strong>
         </button>
@@ -53,10 +66,15 @@
               </label>
             </div>
             <div class="password">
-              <input type="password" autocomplete="off" name="password" required />
+              <input id="password" type="password" autocomplete="off" name="password" required />
               <label for="password" class="label">
                 <span class="content">Password</span>
               </label>
+              <button id="visibility" onclick="visibility()">
+                <span class="material-icons">
+                  visibility
+                </span>
+              </button>
             </div>
           </div>
         </div>

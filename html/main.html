@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мессенджер</title>
-  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
-  <script src="../scripts/main.js"></script>
+<!--  <script src="../scripts/main.js"></script>-->
 </head>
 
 <body>
@@ -36,17 +36,41 @@
       </div>
       <div class="dialogs">
         <ul>
-        <li><a href="/">Пункт 1</a></li>
-        <li><a href="/">Пункт 2</a></li>
-        <li><a href="/">Пункт 3</a></li>
-        <li><a href="/">Пункт 5</a></li>
-      </ul>
+          <li><a href="/">Пункт 1</a></li>
+          <li><a href="/">Пункт 2</a></li>
+          <li><a href="/">Пункт 3</a></li>
+          <li><a href="/">Пункт 5</a></li>
+        </ul>
       </div>
     </div>
     <div id="main_window">
-      
+        <div class="dialog">
+        <div id="scrollbar">
+          <div class="overflow">
+            <div class="element">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum eius deserunt, iste quaerat ab, omnis dicta veniam iure, distinctio cupiditate dolorem. Numquam quos laborum nobis consequatur est quas saepe cum. ipsum dolor sit amet, consectetur adipisicing elit. Neque architecto in blanditiis, corporis, quam sed, possimus mollitia atque unde numquam quibusdam ipsa culpa! Atque ut eos, corporis, commodi rem voluptas.
+            </div>
+            <div class="element">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab tempora consequatur blanditiis in iste vero, ea quod eveniet doloribus tenetur fugit officia harum, incidunt quo culpa, odio ex. Qui, aspernatur.
+            </div>
+            <div class="element">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusantium ea et eum quia quae fugit perspiciatis. Cum, minus, laboriosam modi quibusdam nemo adipisci doloremque id sunt a odio dicta!
+            </div>
+            <div class="element">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore atque, sit perspiciatis eum maxime officiis assumenda rerum molestias, libero alias explicabo architecto nisi ratione ipsam laudantium tenetur dolorum dolor ipsum. ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore laborum, tempore perspiciatis asperiores molestiae doloribus nam tempora corporis itaque! Et optio magni, provident fuga nobis deserunt consequatur nam nulla.
+            </div>
+            <div class="element">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia voluptas error pariatur iusto non quas optio maxime libero at a nemo temporibus, quam dolore blanditiis, tenetur vero deleniti aperiam. Eveniet.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
+<script>
+  var message = document.getElementById('scrollbar');
+  message.scrollTop = message.scrollHeight;
+</script>
 
 </html>

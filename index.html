@@ -7,6 +7,19 @@
     <title>Autoriastion</title>
     <link rel="stylesheet" href="styles/autorisation.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+      function visibility() {
+        var visibility = document.getElementById('visibility');
+        var password = document.getElementById('password');
+        if (password.type === "password") {
+          password.type = "text";
+          visibility.style.color = "#9ec295";
+        } else {
+          password.type = "password";
+          visibility.style.color = "#bfbfbf";
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -37,15 +50,32 @@
             </label>
           </div>
           <div class="password">
-            <input type="password" autocomplete="off" name="password" required />
+            <input id="password" type="password" autocomplete="off" name="password" required />
             <label for="password" class="label">
               <span class="content">Password</span>
             </label>
+            <button id="visibility" onclick="visibility()">
+              <span class="material-icons">
+                visibility
+              </span>
+            </button>
+          </div>
+          <div class="registration_forgot">
+            <a href="html/main.html">
+              <button class="registration">
+                <strong>Registration</strong>
+              </button>
+            </a>
+            <a href="html/main.html">
+              <button class="forgot">
+                <strong>Forgot?</strong>
+              </button>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="scripts/some_text.js"></script>
+<!--  <script src="scripts/some_text.js"></script>-->
 
 </html>
