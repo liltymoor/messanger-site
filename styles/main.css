@@ -1,5 +1,6 @@
 :root {
   --bgColor: #eef1ed;
+  --color_0: rgba(207, 231, 200, 0.25);
   --color_1: #CFE7C8;
   --color_2: #C6E7BD;
   --color_3: #A7CE9D;
@@ -208,13 +209,6 @@ body {
   background: transparent;
 }
 
-.dialogs {
-  position: absolute;
-  height: calc(100% - 60px);
-  bottom: 0;
-}
-
-
 
 
 
@@ -230,10 +224,10 @@ body {
   border-bottom-right-radius: 20%;
 }
 
-.dialog {
+.active_dialog {
   height: 90%;
   width: 89%;
-  padding: 0px 1% 20px 10%;
+  padding: 0px 10% 20px 10%;
 }
 
 #scrollbar {
@@ -270,15 +264,15 @@ scrollbar style | begin
   visibility: hidden;
 }
 
-.dialog:hover ::-webkit-scrollbar-track {
+.active_dialog:hover ::-webkit-scrollbar-track {
   visibility: visible;
 }
 
-.dialog:hover ::-webkit-scrollbar {
+.active_dialog:hover ::-webkit-scrollbar {
   visibility: visible;
 }
 
-.dialog:hover ::-webkit-scrollbar-thumb {
+.active_dialog:hover ::-webkit-scrollbar-thumb {
   visibility: visible;
 }
 
@@ -297,6 +291,134 @@ scrollbar style | end
   padding-top: 50%;
   padding-right: 5%;
 }
+
+/*
+dialogs | start
+*/
+
+.dialogs {
+  position: absolute;
+  height: calc(100% - 60px);
+  width: 100%;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.dialog {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  border: none;
+  background: var(--bg_main_1);
+  outline: none;
+}
+
+.dialog:hover {
+  background: var(--color_0);
+}
+
+/*
+.dialog:focus {
+  background: var(--color_3);
+}
+*/
+
+.dialog img {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 6px;
+  top: 6px;
+  border-radius: 24px;
+}
+
+.dialog_data {
+  position: absolute;
+  top: 0;
+  right: 55px;
+  width: calc(100% - 120px);
+  height: 100%;
+}
+
+.dialog_name {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.dialog_preview {
+  position: absolute;
+  left 0;
+  top: 55%;
+  font-size: 13px;
+  color: var(--color_5)
+}
+
+.dialog_date {
+  position: absolute;
+  top: 15%;
+  right: 1%;
+  width: 55px;
+  height: 100%;
+  font-size: 11px;
+  color: var(--search_test)
+}
+
+/*
+.dialogs #dialog_1:focus #main_window {
+  visibility: visible;
+}
+*/
+
+/*
+dialog | end
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

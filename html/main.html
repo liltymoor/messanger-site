@@ -8,6 +8,47 @@
   <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
 <!--  <script src="../scripts/main.js"></script>-->
+  <script>
+    function dialog_selection(number) {
+      var text_color = "#FCFCFC";
+      var bg_color =  "#A7CE9D";
+      var hover_color = "rgba(207, 231, 200, 0.25)";
+      var id = 'dialog_' + number;
+
+      var dialog = document.getElementById(id);
+      
+      if (flag != number) {
+        if (flag == 0) {
+          dialog.getElementsByClassName('dialog_date')[0].style.color = text_color;
+          dialog.getElementsByClassName('dialog_name')[0].style.color = text_color;
+          dialog.getElementsByClassName('dialog_preview')[0].style.color = text_color;
+          dialog.style.background = bg_color;
+          
+          flag = number;
+        } else {
+          dialog.getElementsByClassName('dialog_date')[0].style.color = text_color;
+          dialog.getElementsByClassName('dialog_name')[0].style.color = text_color;
+          dialog.getElementsByClassName('dialog_preview')[0].style.color = text_color;
+          dialog.style.background = bg_color;
+
+          var default_name_color = "#000000";
+          var default_preview_color =  "#448633";
+          var default_date_color = "#777777";
+          var default_bg_color = "#FCFCFC";
+          var old_id = 'dialog_' + flag;
+          
+          var old_dialog = document.getElementById(old_id);
+
+          old_dialog.getElementsByClassName('dialog_date')[0].style.color = default_date_color;
+          old_dialog.getElementsByClassName('dialog_name')[0].style.color = default_name_color;
+          old_dialog.getElementsByClassName('dialog_preview')[0].style.color = default_preview_color;
+          old_dialog.style.background = default_bg_color;
+          
+          flag = number;
+        }
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -35,26 +76,350 @@
         </label>
       </div>
       <div class="dialogs">
+        <button class="dialog" id="dialog_1" onclick="dialog_selection('1')">
+          <img src="../images/dialog_image_1.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #1
+            </div>
+            <div class="dialog_preview">
+              Lorem ipsum dolor sit amet. 
+            </div>
+          </div>
+          <div class="dialog_date">
+            18/11/21
+          </div>
+        </button>
+        <button class="dialog" id="dialog_2" onclick="dialog_selection('2')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_3" onclick="dialog_selection('3')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_4" onclick="dialog_selection('4')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_5" onclick="dialog_selection('5')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_6" onclick="dialog_selection('6')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_7" onclick="dialog_selection('7')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_8" onclick="dialog_selection('8')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_9" onclick="dialog_selection('9')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_10" onclick="dialog_selection('10')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_11" onclick="dialog_selection('11')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_12" onclick="dialog_selection('12')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_13" onclick="dialog_selection('13')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_14" onclick="dialog_selection('14')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_15" onclick="dialog_selection('15')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_16" onclick="dialog_selection('16')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_17" onclick="dialog_selection('17')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_18" onclick="dialog_selection('18')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_19" onclick="dialog_selection('19')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_20" onclick="dialog_selection('20')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_21" onclick="dialog_selection('21')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_22" onclick="dialog_selection('22')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+        <button class="dialog" id="dialog_23" onclick="dialog_selection('23')">
+          <img src="../images/dialog_image_2.jpg" alt="">
+          <div class="dialog_data">
+            <div class="dialog_name">
+              Chat #2
+            </div>
+            <div class="dialog_preview">
+              Привет
+            </div>
+          </div>
+          <div class="dialog_date">
+            12/4/20
+          </div>
+        </button>
+<!--
         <ul>
           <li><a href="/">Пункт 1</a></li>
           <li><a href="/">Пункт 2</a></li>
           <li><a href="/">Пункт 3</a></li>
           <li><a href="/">Пункт 5</a></li>
         </ul>
+-->
       </div>
     </div>
     <div id="main_window">
-        <div class="dialog">
+      <div class="active_dialog">
         <div id="scrollbar">
           <div class="overflow">
             <div class="element">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum eius deserunt, iste quaerat ab, omnis dicta veniam iure, distinctio cupiditate dolorem. Numquam quos laborum nobis consequatur est quas saepe cum. ipsum dolor sit amet, consectetur adipisicing elit. Neque architecto in blanditiis, corporis, quam sed, possimus mollitia atque unde numquam quibusdam ipsa culpa! Atque ut eos, corporis, commodi rem voluptas.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum eius deserunt, iste quaerat ab, omnis dicta veniam iure, distinctio cupiditate dolorem. Numquam quos laborum nobis consequatur est quas saepe. ipsum dolor sit amet, consectetur adipisicing elit. Neque architecto in blanditiis, corporis, quam sed, possimus mollitia atque unde numquam quibusdam ipsa culpa! Atque ut eos, corporis, commodi rem voluptas.
             </div>
             <div class="element">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab tempora consequatur blanditiis in iste vero, ea quod eveniet doloribus tenetur fugit officia harum, incidunt quo culpa, odio ex. Qui, aspernatur.
             </div>
             <div class="element">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusantium ea et eum quia quae fugit perspiciatis. Cum, minus, laboriosam modi quibusdam nemo adipisci doloremque id sunt a odio dicta!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusantium ea et eum quia quae fugit perspiciatis. Minus, laboriosam modi quibusdam nemo adipisci doloremque id sunt a odio dicta!
             </div>
             <div class="element">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore atque, sit perspiciatis eum maxime officiis assumenda rerum molestias, libero alias explicabo architecto nisi ratione ipsam laudantium tenetur dolorum dolor ipsum. ipsum dolor sit amet, consectetur adipisicing elit. Consectetur labore laborum, tempore perspiciatis asperiores molestiae doloribus nam tempora corporis itaque! Et optio magni, provident fuga nobis deserunt consequatur nam nulla.
@@ -68,9 +433,12 @@
     </div>
   </div>
 </body>
+
 <script>
   var message = document.getElementById('scrollbar');
   message.scrollTop = message.scrollHeight;
+  
+  var flag = 0;
 </script>
 
 </html>
